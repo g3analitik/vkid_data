@@ -1,2 +1,2 @@
-vkid_groupname	vkid_schema	vkid	kategori_group	kategori	filter	division	query	query_dsl
-PRU15	vkid_pru15	1000	Pengundi PRU14	Pengundi PRU14	_exists_:spr20180410	spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid		
+vkid_groupname	vkid_schema	vkid	kategori_group	kategori	filter	division	division_label	query	query_dsl
+PRU15	vkid_pru15	1000	Pengundi PRU14	Pengundi PRU14	_exists_:spr20180410	spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid	spr20180410.negeri,spr20180410.parlimen, spr20180410.dun, spr20180410.dm, spr20180410.lokaliti		

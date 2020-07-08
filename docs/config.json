@@ -1,106 +1,66 @@
 [
    {
-      "query" : "",
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "filter" : "_exists_:spr20180410",
-      "vkid" : 1,
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
       "version" : 2,
-      "vkid_groupname" : "PRU15",
-      "hierarchy_base" : 1,
       "kategori" : "Dalam daftar PRU14",
+      "vkid_groupname" : "PRU15",
+      "vkid" : 1,
       "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15"
+      "vkid_schema" : 1
    },
    {
-      "hierarchy_base" : 0,
+      "kategori_group" : "Pengundi",
+      "vkid" : 2,
       "vkid_groupname" : "PRU15",
       "kategori" : "Dalam daftar PRU13",
-      "vkid_schema" : "vkid_pru15",
-      "kategori_group" : "Pengundi",
       "version" : 2,
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "vkid" : 2,
-      "filter" : "_exists_:spr20130331",
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
-      "query" : ""
+      "vkid_schema" : 2
    },
    {
-      "vkid_schema" : "vkid_pru15",
-      "kategori_group" : "Pengundi",
+      "version" : 2,
       "kategori" : "Tiada dalam daftar PRU13",
-      "hierarchy_base" : 0,
       "vkid_groupname" : "PRU15",
-      "version" : 2,
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
       "vkid" : 3,
-      "filter" : "NOT _exists_:spr20130331",
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "query" : ""
+      "kategori_group" : "Pengundi",
+      "vkid_schema" : 3
    },
    {
+      "vkid_schema" : 4,
       "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15",
-      "vkid_groupname" : "PRU15",
-      "hierarchy_base" : 0,
-      "kategori" : "Dalam daftar PRU12",
-      "version" : 1,
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
       "vkid" : 4,
-      "filter" : "_exists_:spr20071231b",
-      "query" : ""
-   },
-   {
-      "version" : 1,
-      "kategori" : "Tiada dalam daftar PRU12",
       "vkid_groupname" : "PRU15",
-      "hierarchy_base" : 0,
-      "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15",
-      "query" : "",
-      "vkid" : 5,
-      "filter" : "NOT _exists_:spr20071231b",
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword"
+      "kategori" : "Dalam daftar PRU12",
+      "version" : 1
    },
    {
-      "version" : 2,
+      "vkid_schema" : 5,
+      "version" : 1,
+      "vkid_groupname" : "PRU15",
+      "kategori" : "Tiada dalam daftar PRU12",
+      "vkid" : 5,
+      "kategori_group" : "Pengundi"
+   },
+   {
+      "kategori_group" : "Pengundi",
+      "vkid" : 6,
       "kategori" : "Ada maklumat pekerjaan",
       "vkid_groupname" : "PRU15",
-      "hierarchy_base" : 0,
-      "vkid_schema" : "vkid_pru15",
-      "kategori_group" : "Pengundi",
-      "query" : "",
-      "filter" : "_exists_:pks20171130",
-      "vkid" : 6,
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword"
+      "version" : 2,
+      "vkid_schema" : 6
    },
    {
-      "query" : "",
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
-      "vkid" : 7,
-      "filter" : "_exists_:pks20171130 AND pks20171130.tarikh_caruman:[2016-01-01 TO *]",
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
+      "vkid_schema" : 7,
+      "kategori" : "Pekerja aktif",
+      "vkid_groupname" : "PRU15",
       "version" : 2,
       "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15",
-      "kategori" : "Pekerja aktif",
-      "hierarchy_base" : 0,
-      "vkid_groupname" : "PRU15"
+      "vkid" : 7
    },
    {
-      "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-      "filter" : "_exists_:pks20171130 AND pks20171130.tarikh_caruman:[* TO 2015-12-31]",
+      "vkid_schema" : 8,
       "vkid" : 8,
-      "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
-      "query" : "",
-      "hierarchy_base" : 0,
-      "vkid_groupname" : "PRU15",
-      "kategori" : "Pekerja tidak aktif",
       "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15",
-      "version" : 2
+      "version" : 2,
+      "vkid_groupname" : "PRU15",
+      "kategori" : "Pekerja tidak aktif"
    }
 ]

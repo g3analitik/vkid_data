@@ -1,66 +1,66 @@
 [
    {
-      "vkid_schema" : "vkid_pru15",
-      "version" : 1,
+      "kategori_group" : "Pengundi",
       "kategori" : "Dalam daftar PRU14",
-      "vkid" : 1,
+      "vkid_schema" : "vkid_pru15",
       "vkid_groupname" : "PRU15",
-      "kategori_group" : "Pengundi"
+      "version" : 1,
+      "vkid" : 1
    },
    {
-      "kategori_group" : "Pengundi",
-      "vkid_schema" : "vkid_pru15",
-      "version" : 0,
       "vkid" : 2,
-      "kategori" : "Dalam daftar PRU13",
-      "vkid_groupname" : "PRU15"
+      "version" : 0,
+      "vkid_groupname" : "PRU15",
+      "vkid_schema" : "vkid_pru15",
+      "kategori_group" : "Pengundi",
+      "kategori" : "Dalam daftar PRU13"
    },
    {
       "kategori_group" : "Pengundi",
-      "vkid_groupname" : "PRU15",
       "kategori" : "Tiada dalam daftar PRU13",
-      "vkid" : 3,
-      "version" : 0,
-      "vkid_schema" : "vkid_pru15"
-   },
-   {
-      "kategori_group" : "Pengundi",
+      "vkid_groupname" : "PRU15",
       "vkid_schema" : "vkid_pru15",
-      "version" : 0,
-      "kategori" : "Dalam daftar PRU12",
-      "vkid" : 4,
-      "vkid_groupname" : "PRU15"
+      "vkid" : 3,
+      "version" : 0
    },
    {
-      "kategori_group" : "Pengundi",
+      "vkid" : 4,
       "version" : 0,
       "vkid_schema" : "vkid_pru15",
       "vkid_groupname" : "PRU15",
-      "vkid" : 5,
-      "kategori" : "Tiada dalam daftar PRU12"
+      "kategori_group" : "Pengundi",
+      "kategori" : "Dalam daftar PRU12"
    },
    {
+      "vkid_groupname" : "PRU15",
+      "vkid_schema" : "vkid_pru15",
+      "kategori" : "Tiada dalam daftar PRU12",
       "kategori_group" : "Pengundi",
-      "version" : 0,
+      "vkid" : 5,
+      "version" : 0
+   },
+   {
       "vkid_schema" : "vkid_pru15",
       "vkid_groupname" : "PRU15",
       "kategori" : "Ada maklumat pekerjaan",
-      "vkid" : 6
+      "kategori_group" : "Pengundi",
+      "vkid" : 6,
+      "version" : 0
    },
    {
-      "kategori_group" : "Pengundi",
-      "kategori" : "Pekerja aktif",
+      "version" : 0,
       "vkid" : 7,
-      "vkid_groupname" : "PRU15",
+      "kategori" : "Pekerja aktif",
+      "kategori_group" : "Pengundi",
       "vkid_schema" : "vkid_pru15",
-      "version" : 0
+      "vkid_groupname" : "PRU15"
    },
    {
-      "kategori_group" : "Pengundi",
-      "vkid" : 8,
       "kategori" : "Pekerja tidak aktif",
-      "vkid_groupname" : "PRU15",
+      "kategori_group" : "Pengundi",
       "vkid_schema" : "vkid_pru15",
-      "version" : 0
+      "vkid_groupname" : "PRU15",
+      "version" : 0,
+      "vkid" : 8
    }
 ]

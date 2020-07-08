@@ -1,66 +1,66 @@
 [
    {
-      "version" : 1,
-      "kategori" : "Dalam daftar PRU14",
-      "vkid_schema" : "vkid_pru15",
-      "vkid" : 1,
       "kategori_group" : "Pengundi",
+      "vkid" : 1,
+      "vkid_schema" : "vkid_pru15",
+      "version" : 2,
+      "kategori" : "Dalam daftar PRU14",
       "vkid_groupname" : "PRU15"
    },
    {
-      "vkid_groupname" : "PRU15",
       "kategori_group" : "Pengundi",
       "vkid" : 2,
       "vkid_schema" : "vkid_pru15",
+      "version" : 0,
       "kategori" : "Dalam daftar PRU13",
-      "version" : 0
+      "vkid_groupname" : "PRU15"
    },
    {
+      "kategori_group" : "Pengundi",
       "version" : 0,
       "kategori" : "Tiada dalam daftar PRU13",
+      "vkid_groupname" : "PRU15",
       "vkid" : 3,
+      "vkid_schema" : "vkid_pru15"
+   },
+   {
+      "vkid" : 4,
       "vkid_schema" : "vkid_pru15",
+      "kategori" : "Dalam daftar PRU12",
+      "version" : 0,
       "vkid_groupname" : "PRU15",
       "kategori_group" : "Pengundi"
    },
    {
-      "vkid_groupname" : "PRU15",
-      "kategori_group" : "Pengundi",
-      "vkid" : 4,
-      "vkid_schema" : "vkid_pru15",
-      "version" : 0,
-      "kategori" : "Dalam daftar PRU12"
-   },
-   {
-      "version" : 0,
-      "kategori" : "Tiada dalam daftar PRU12",
       "vkid_schema" : "vkid_pru15",
       "vkid" : 5,
-      "kategori_group" : "Pengundi",
-      "vkid_groupname" : "PRU15"
+      "vkid_groupname" : "PRU15",
+      "version" : 0,
+      "kategori" : "Tiada dalam daftar PRU12",
+      "kategori_group" : "Pengundi"
    },
    {
+      "kategori_group" : "Pengundi",
       "version" : 0,
       "kategori" : "Ada maklumat pekerjaan",
-      "vkid_schema" : "vkid_pru15",
-      "vkid" : 6,
-      "kategori_group" : "Pengundi",
-      "vkid_groupname" : "PRU15"
-   },
-   {
       "vkid_groupname" : "PRU15",
-      "kategori_group" : "Pengundi",
-      "version" : 0,
-      "kategori" : "Pekerja aktif",
-      "vkid" : 7,
+      "vkid" : 6,
       "vkid_schema" : "vkid_pru15"
    },
    {
-      "vkid_schema" : "vkid_pru15",
-      "vkid" : 8,
-      "kategori" : "Pekerja tidak aktif",
-      "version" : 0,
       "kategori_group" : "Pengundi",
+      "vkid" : 7,
+      "vkid_schema" : "vkid_pru15",
+      "kategori" : "Pekerja aktif",
+      "version" : 0,
+      "vkid_groupname" : "PRU15"
+   },
+   {
+      "kategori_group" : "Pengundi",
+      "vkid" : 8,
+      "vkid_schema" : "vkid_pru15",
+      "version" : 0,
+      "kategori" : "Pekerja tidak aktif",
       "vkid_groupname" : "PRU15"
    }
 ]

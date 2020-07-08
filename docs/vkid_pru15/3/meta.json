@@ -1,11 +1,48 @@
 {
-   "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
+   "vkid_groupname" : "PRU15",
+   "vkid" : "3",
+   "vkid_schema" : "vkid_pru15",
+   "query" : "",
+   "filter" : "NOT _exists_:spr20130331",
+   "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
+   "kategori_group" : "Pengundi",
    "_hierarchy" : [
       {
-         "level" : 0,
-         "label" : "negeri",
          "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_negeri.tsv",
+         "level" : 0,
+         "keyField" : "spr20180410.stateid",
+         "key" : "stateid",
+         "label" : "negeri",
+         "dbtable" : "vkid_pru15.dd_spr_negeri",
+         "labelField" : "spr20180410.negeri.keyword",
          "ds" : {
+            "dd" : {
+               "structure" : [
+                  {
+                     "type" : "int not null default 0",
+                     "field" : "stateid",
+                     "pk" : 1,
+                     "update" : 1
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "pk" : 0,
+                     "field" : "negeri",
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "total",
+                     "type" : "int"
+                  }
+               ],
+               "name" : "dd_negeri",
+               "keys" : [
+                  "PRIMARY KEY (stateid)",
+                  "KEY (stateid)"
+               ]
+            },
             "data" : {
                "keys" : [
                   "PRIMARY KEY (vkid,stateid)",
@@ -15,100 +52,100 @@
                "name" : "vk_negeri",
                "structure" : [
                   {
-                     "field" : "vkid",
-                     "pk" : 1,
+                     "type" : "int not null default 0",
                      "update" : 1,
-                     "type" : "int not null default 0"
+                     "pk" : 1,
+                     "field" : "vkid"
                   },
                   {
-                     "field" : "kategori_group",
-                     "pk" : 0,
+                     "type" : "varchar(255)",
                      "update" : 1,
+                     "pk" : 0,
+                     "field" : "kategori_group"
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "kategori",
                      "type" : "varchar(255)"
                   },
                   {
-                     "field" : "kategori",
-                     "pk" : 0,
+                     "update" : 1,
+                     "field" : "stateid",
+                     "pk" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
                      "type" : "varchar(255)",
+                     "pk" : 0,
+                     "field" : "negeri",
                      "update" : 1
                   },
                   {
-                     "update" : 1,
-                     "type" : "int not null default 0",
-                     "pk" : 1,
-                     "field" : "stateid"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "varchar(255)",
-                     "field" : "negeri",
-                     "pk" : 0
-                  },
-                  {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "pk" : 0,
                      "field" : "total"
                   },
                   {
-                     "pk" : 0,
+                     "type" : "int",
                      "field" : "M_semenanjung",
-                     "update" : 1,
-                     "type" : "int"
+                     "pk" : 0,
+                     "update" : 1
                   },
                   {
+                     "type" : "int",
+                     "update" : 1,
                      "field" : "C_semenanjung",
-                     "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "pk" : 0
                   },
                   {
+                     "update" : 1,
+                     "pk" : 0,
                      "field" : "I_semenanjung",
-                     "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "type" : "int"
                   },
                   {
-                     "type" : "int",
-                     "update" : 1,
+                     "field" : "L_semenanjung",
                      "pk" : 0,
-                     "field" : "L_semenanjung"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "OA_semenanjung2",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "L_semenanjung2",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "BI_sabah"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "BBI_sabah",
                      "update" : 1,
                      "type" : "int"
                   },
                   {
+                     "update" : 1,
+                     "field" : "OA_semenanjung2",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "L_semenanjung2",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "pk" : 0,
+                     "field" : "BI_sabah",
+                     "update" : 1
+                  },
+                  {
+                     "field" : "BBI_sabah",
+                     "pk" : 0,
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
+                     "update" : 1,
                      "field" : "C_sabah",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "type" : "int"
                   },
                   {
+                     "update" : 1,
                      "field" : "L_sabah",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "type" : "int"
                   },
                   {
                      "type" : "int",
@@ -117,129 +154,63 @@
                      "pk" : 0
                   },
                   {
+                     "update" : 1,
                      "pk" : 0,
                      "field" : "IB_sarawak",
-                     "type" : "int",
-                     "update" : 1
+                     "type" : "int"
                   },
                   {
-                     "pk" : 0,
+                     "type" : "int",
+                     "update" : 1,
                      "field" : "BD_sarawak",
-                     "type" : "int",
-                     "update" : 1
+                     "pk" : 0
                   },
                   {
+                     "type" : "int",
                      "pk" : 0,
                      "field" : "OU_sarawak",
+                     "update" : 1
+                  },
+                  {
+                     "field" : "C_sarawak",
+                     "pk" : 0,
                      "update" : 1,
                      "type" : "int"
                   },
                   {
-                     "pk" : 0,
-                     "field" : "C_sarawak",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
+                     "update" : 1,
                      "pk" : 0,
                      "field" : "L_sarawak",
-                     "update" : 1,
                      "type" : "int"
                   },
                   {
+                     "update" : 0,
                      "pk" : 0,
                      "field" : "last_update",
-                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
-                     "update" : 0
+                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
                   }
                ]
-            },
-            "dd" : {
-               "structure" : [
-                  {
-                     "field" : "stateid",
-                     "pk" : 1,
-                     "update" : 1,
-                     "type" : "int not null default 0"
-                  },
-                  {
-                     "type" : "varchar(255)",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "negeri"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "total",
-                     "update" : 1,
-                     "type" : "int"
-                  }
-               ],
-               "keys" : [
-                  "PRIMARY KEY (stateid)",
-                  "KEY (stateid)"
-               ],
-               "name" : "dd_negeri"
             }
-         },
-         "dbtable" : "vkid_pru15.dd_spr_negeri",
-         "key" : "stateid",
-         "labelField" : "spr20180410.negeri.keyword",
-         "keyField" : "spr20180410.stateid"
+         }
       },
       {
-         "labelField" : "spr20180410.parlimen.keyword",
-         "keyField" : "spr20180410.parid",
+         "label" : "parlimen",
          "dbtable" : "vkid_pru15.dd_spr_parlimen",
-         "key" : "parid",
          "ds" : {
-            "dd" : {
-               "structure" : [
-                  {
-                     "type" : "int not null default 0",
-                     "update" : 1,
-                     "pk" : 1,
-                     "field" : "stateid"
-                  },
-                  {
-                     "pk" : 1,
-                     "field" : "parid",
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "negeri",
-                     "type" : "varchar(255)",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "parlimen",
-                     "update" : 1,
-                     "type" : "varchar(255)"
-                  },
-                  {
-                     "field" : "total",
-                     "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
-                  }
-               ],
+            "data" : {
                "keys" : [
-                  "PRIMARY KEY (stateid,parid)",
+                  "PRIMARY KEY (vkid,stateid,parid)",
+                  "KEY (vkid)",
                   "KEY (stateid)",
                   "KEY (parid)"
                ],
-               "name" : "dd_parlimen"
-            },
-            "data" : {
+               "name" : "vk_parlimen",
                "structure" : [
                   {
-                     "pk" : 1,
+                     "update" : 1,
                      "field" : "vkid",
-                     "type" : "int not null default 0",
-                     "update" : 1
+                     "pk" : 1,
+                     "type" : "int not null default 0"
                   },
                   {
                      "type" : "varchar(255)",
@@ -256,68 +227,68 @@
                   {
                      "pk" : 1,
                      "field" : "stateid",
-                     "type" : "int not null default 0",
-                     "update" : 1
+                     "update" : 1,
+                     "type" : "int not null default 0"
                   },
                   {
-                     "type" : "int not null default 0",
-                     "update" : 1,
                      "field" : "parid",
-                     "pk" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "negeri",
+                     "pk" : 1,
                      "update" : 1,
-                     "type" : "varchar(255)"
+                     "type" : "int not null default 0"
                   },
                   {
                      "type" : "varchar(255)",
                      "update" : 1,
+                     "pk" : 0,
+                     "field" : "negeri"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "pk" : 0,
                      "field" : "parlimen",
-                     "pk" : 0
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "total"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "pk" : 0,
-                     "field" : "M_semenanjung"
-                  },
-                  {
-                     "field" : "C_semenanjung",
-                     "pk" : 0,
-                     "type" : "int",
                      "update" : 1
                   },
                   {
-                     "type" : "int",
                      "update" : 1,
-                     "field" : "I_semenanjung",
-                     "pk" : 0
+                     "field" : "total",
+                     "pk" : 0,
+                     "type" : "int"
                   },
                   {
-                     "field" : "L_semenanjung",
                      "pk" : 0,
+                     "field" : "M_semenanjung",
                      "update" : 1,
                      "type" : "int"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
-                     "field" : "OA_semenanjung2",
+                     "pk" : 0,
+                     "field" : "C_semenanjung",
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "I_semenanjung",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "update" : 1,
+                     "field" : "L_semenanjung",
                      "pk" : 0
                   },
                   {
                      "update" : 1,
+                     "pk" : 0,
+                     "field" : "OA_semenanjung2",
+                     "type" : "int"
+                  },
+                  {
                      "type" : "int",
+                     "pk" : 0,
                      "field" : "L_semenanjung2",
-                     "pk" : 0
+                     "update" : 1
                   },
                   {
                      "field" : "BI_sabah",
@@ -327,271 +298,142 @@
                   },
                   {
                      "update" : 1,
-                     "type" : "int",
+                     "pk" : 0,
                      "field" : "BBI_sabah",
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "update" : 1,
+                     "field" : "C_sabah",
                      "pk" : 0
                   },
                   {
-                     "field" : "C_sabah",
+                     "field" : "L_sabah",
                      "pk" : 0,
                      "update" : 1,
                      "type" : "int"
                   },
                   {
-                     "pk" : 0,
-                     "field" : "L_sabah",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "M_sarawak",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "IB_sarawak",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
                      "update" : 1,
+                     "field" : "M_sarawak",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
                      "type" : "int",
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "IB_sarawak"
+                  },
+                  {
+                     "type" : "int",
+                     "update" : 1,
                      "field" : "BD_sarawak",
                      "pk" : 0
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "field" : "OU_sarawak",
                      "pk" : 0
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "pk" : 0,
                      "field" : "C_sarawak"
                   },
                   {
-                     "pk" : 0,
-                     "field" : "L_sarawak",
                      "type" : "int",
-                     "update" : 1
+                     "update" : 1,
+                     "field" : "L_sarawak",
+                     "pk" : 0
                   },
                   {
-                     "field" : "last_update",
-                     "pk" : 0,
+                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
                      "update" : 0,
-                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+                     "pk" : 0,
+                     "field" : "last_update"
+                  }
+               ]
+            },
+            "dd" : {
+               "structure" : [
+                  {
+                     "type" : "int not null default 0",
+                     "update" : 1,
+                     "pk" : 1,
+                     "field" : "stateid"
+                  },
+                  {
+                     "type" : "int not null default 0",
+                     "update" : 1,
+                     "field" : "parid",
+                     "pk" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "negeri",
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "update" : 1,
+                     "field" : "parlimen",
+                     "pk" : 0
+                  },
+                  {
+                     "type" : "int",
+                     "pk" : 0,
+                     "field" : "total",
+                     "update" : 1
                   }
                ],
-               "name" : "vk_parlimen",
+               "name" : "dd_parlimen",
                "keys" : [
-                  "PRIMARY KEY (vkid,stateid,parid)",
-                  "KEY (vkid)",
+                  "PRIMARY KEY (stateid,parid)",
                   "KEY (stateid)",
                   "KEY (parid)"
                ]
             }
          },
+         "labelField" : "spr20180410.parlimen.keyword",
+         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_parlimen.tsv",
          "level" : 1,
-         "label" : "parlimen",
-         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_parlimen.tsv"
+         "keyField" : "spr20180410.parid",
+         "key" : "parid"
       },
       {
+         "label" : "dun",
+         "dbtable" : "vkid_pru15.dd_spr_dun",
+         "labelField" : "spr20180410.dun.keyword",
          "ds" : {
-            "data" : {
-               "structure" : [
-                  {
-                     "field" : "vkid",
-                     "pk" : 1,
-                     "update" : 1,
-                     "type" : "int not null default 0"
-                  },
-                  {
-                     "field" : "kategori_group",
-                     "pk" : 0,
-                     "type" : "varchar(255)",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "varchar(255)",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "kategori"
-                  },
-                  {
-                     "field" : "stateid",
-                     "pk" : 1,
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 1,
-                     "field" : "parid",
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 1,
-                     "field" : "dunid",
-                     "update" : 1,
-                     "type" : "int not null default 0"
-                  },
-                  {
-                     "field" : "negeri",
-                     "pk" : 0,
-                     "update" : 1,
-                     "type" : "varchar(255)"
-                  },
-                  {
-                     "field" : "parlimen",
-                     "pk" : 0,
-                     "type" : "varchar(255)",
-                     "update" : 1
-                  },
-                  {
-                     "field" : "dun",
-                     "pk" : 0,
-                     "update" : 1,
-                     "type" : "varchar(255)"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "field" : "total",
-                     "pk" : 0
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "M_semenanjung",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "field" : "C_semenanjung",
-                     "pk" : 0,
-                     "update" : 1,
-                     "type" : "int"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "I_semenanjung",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "L_semenanjung"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "OA_semenanjung2",
-                     "update" : 1,
-                     "type" : "int"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "pk" : 0,
-                     "field" : "L_semenanjung2"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "pk" : 0,
-                     "field" : "BI_sabah"
-                  },
-                  {
-                     "field" : "BBI_sabah",
-                     "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "C_sabah"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "L_sabah",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "field" : "M_sarawak",
-                     "pk" : 0,
-                     "update" : 1,
-                     "type" : "int"
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "field" : "IB_sarawak",
-                     "pk" : 0
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "BD_sarawak"
-                  },
-                  {
-                     "field" : "OU_sarawak",
-                     "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "field" : "C_sarawak",
-                     "pk" : 0
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "L_sarawak"
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "last_update",
-                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
-                     "update" : 0
-                  }
-               ],
+            "dd" : {
+               "name" : "dd_dun",
                "keys" : [
-                  "PRIMARY KEY (vkid,stateid,parid,dunid)",
-                  "KEY (vkid)",
+                  "PRIMARY KEY (stateid,parid,dunid)",
                   "KEY (stateid)",
                   "KEY (parid)",
                   "KEY (dunid)"
                ],
-               "name" : "vk_dun"
-            },
-            "dd" : {
                "structure" : [
                   {
-                     "pk" : 1,
+                     "type" : "int not null default 0",
+                     "update" : 1,
                      "field" : "stateid",
-                     "type" : "int not null default 0",
-                     "update" : 1
+                     "pk" : 1
                   },
                   {
                      "type" : "int not null default 0",
                      "update" : 1,
-                     "pk" : 1,
-                     "field" : "parid"
+                     "field" : "parid",
+                     "pk" : 1
                   },
                   {
-                     "update" : 1,
                      "type" : "int not null default 0",
+                     "update" : 1,
                      "pk" : 1,
                      "field" : "dunid"
                   },
@@ -602,74 +444,52 @@
                      "pk" : 0
                   },
                   {
-                     "pk" : 0,
-                     "field" : "parlimen",
                      "type" : "varchar(255)",
+                     "update" : 1,
+                     "field" : "parlimen",
+                     "pk" : 0
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "pk" : 0,
+                     "field" : "dun",
                      "update" : 1
                   },
                   {
-                     "type" : "varchar(255)",
+                     "type" : "int",
                      "update" : 1,
                      "pk" : 0,
-                     "field" : "dun"
-                  },
-                  {
-                     "field" : "total",
-                     "pk" : 0,
-                     "update" : 1,
-                     "type" : "int"
+                     "field" : "total"
                   }
-               ],
+               ]
+            },
+            "data" : {
+               "name" : "vk_dun",
                "keys" : [
-                  "PRIMARY KEY (stateid,parid,dunid)",
+                  "PRIMARY KEY (vkid,stateid,parid,dunid)",
+                  "KEY (vkid)",
                   "KEY (stateid)",
                   "KEY (parid)",
                   "KEY (dunid)"
                ],
-               "name" : "dd_dun"
-            }
-         },
-         "label" : "dun",
-         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_dun.tsv",
-         "level" : 2,
-         "keyField" : "spr20180410.dunid",
-         "labelField" : "spr20180410.dun.keyword",
-         "key" : "dunid",
-         "dbtable" : "vkid_pru15.dd_spr_dun"
-      },
-      {
-         "level" : 3,
-         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_dm.tsv",
-         "label" : "dm",
-         "ds" : {
-            "data" : {
-               "keys" : [
-                  "PRIMARY KEY (vkid,stateid,parid,dunid,dmid)",
-                  "KEY (vkid)",
-                  "KEY (stateid)",
-                  "KEY (parid)",
-                  "KEY (dunid)",
-                  "KEY (dmid)"
-               ],
-               "name" : "vk_dm",
                "structure" : [
                   {
                      "type" : "int not null default 0",
-                     "update" : 1,
                      "pk" : 1,
-                     "field" : "vkid"
+                     "field" : "vkid",
+                     "update" : 1
                   },
                   {
-                     "pk" : 0,
+                     "update" : 1,
                      "field" : "kategori_group",
-                     "type" : "varchar(255)",
-                     "update" : 1
+                     "pk" : 0,
+                     "type" : "varchar(255)"
                   },
                   {
-                     "field" : "kategori",
+                     "update" : 1,
                      "pk" : 0,
-                     "type" : "varchar(255)",
-                     "update" : 1
+                     "field" : "kategori",
+                     "type" : "varchar(255)"
                   },
                   {
                      "pk" : 1,
@@ -678,28 +498,22 @@
                      "type" : "int not null default 0"
                   },
                   {
-                     "update" : 1,
                      "type" : "int not null default 0",
+                     "update" : 1,
                      "pk" : 1,
                      "field" : "parid"
                   },
                   {
-                     "update" : 1,
-                     "type" : "int not null default 0",
                      "field" : "dunid",
-                     "pk" : 1
-                  },
-                  {
                      "pk" : 1,
-                     "field" : "dmid",
                      "update" : 1,
                      "type" : "int not null default 0"
                   },
                   {
-                     "field" : "negeri",
-                     "pk" : 0,
+                     "type" : "varchar(255)",
                      "update" : 1,
-                     "type" : "varchar(255)"
+                     "field" : "negeri",
+                     "pk" : 0
                   },
                   {
                      "field" : "parlimen",
@@ -708,22 +522,16 @@
                      "type" : "varchar(255)"
                   },
                   {
-                     "pk" : 0,
-                     "field" : "dun",
                      "update" : 1,
+                     "field" : "dun",
+                     "pk" : 0,
                      "type" : "varchar(255)"
                   },
                   {
-                     "field" : "dm",
-                     "pk" : 0,
-                     "type" : "varchar(255)",
-                     "update" : 1
-                  },
-                  {
+                     "update" : 1,
                      "field" : "total",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "type" : "int"
                   },
                   {
                      "type" : "int",
@@ -733,21 +541,21 @@
                   },
                   {
                      "update" : 1,
-                     "type" : "int",
                      "pk" : 0,
-                     "field" : "C_semenanjung"
+                     "field" : "C_semenanjung",
+                     "type" : "int"
                   },
                   {
                      "field" : "I_semenanjung",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "update" : 1,
+                     "type" : "int"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
-                     "pk" : 0,
-                     "field" : "L_semenanjung"
+                     "update" : 1,
+                     "field" : "L_semenanjung",
+                     "pk" : 0
                   },
                   {
                      "type" : "int",
@@ -762,128 +570,136 @@
                      "pk" : 0
                   },
                   {
-                     "pk" : 0,
+                     "update" : 1,
                      "field" : "BI_sabah",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
                      "type" : "int",
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "BBI_sabah"
+                  },
+                  {
+                     "type" : "int",
+                     "field" : "C_sabah",
+                     "pk" : 0,
                      "update" : 1
                   },
                   {
-                     "field" : "BBI_sabah",
+                     "field" : "L_sabah",
                      "pk" : 0,
                      "update" : 1,
                      "type" : "int"
                   },
                   {
-                     "field" : "C_sabah",
+                     "field" : "M_sarawak",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
+                     "update" : 1,
+                     "type" : "int"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "pk" : 0,
-                     "field" : "L_sabah"
+                     "field" : "IB_sarawak"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "pk" : 0,
-                     "field" : "M_sarawak"
+                     "field" : "BD_sarawak"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
-                     "field" : "IB_sarawak",
+                     "update" : 1,
+                     "field" : "OU_sarawak",
                      "pk" : 0
                   },
                   {
-                     "field" : "BD_sarawak",
+                     "type" : "int",
                      "pk" : 0,
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "OU_sarawak"
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
                      "field" : "C_sarawak",
-                     "pk" : 0
+                     "update" : 1
                   },
                   {
                      "type" : "int",
-                     "update" : 1,
+                     "field" : "L_sarawak",
                      "pk" : 0,
-                     "field" : "L_sarawak"
+                     "update" : 1
                   },
                   {
                      "update" : 0,
-                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
                      "field" : "last_update",
-                     "pk" : 0
+                     "pk" : 0,
+                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
                   }
                ]
-            },
+            }
+         },
+         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_dun.tsv",
+         "level" : 2,
+         "keyField" : "spr20180410.dunid",
+         "key" : "dunid"
+      },
+      {
+         "ds" : {
             "dd" : {
                "structure" : [
                   {
+                     "update" : 1,
+                     "pk" : 1,
                      "field" : "stateid",
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 1,
+                     "field" : "parid",
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "field" : "dunid",
                      "pk" : 1,
                      "update" : 1,
                      "type" : "int not null default 0"
                   },
                   {
-                     "field" : "parid",
-                     "pk" : 1,
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 1,
-                     "field" : "dunid",
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
                      "field" : "dmid",
                      "pk" : 1,
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "negeri",
-                     "type" : "varchar(255)",
-                     "update" : 1
-                  },
-                  {
                      "update" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
                      "type" : "varchar(255)",
-                     "field" : "parlimen",
+                     "update" : 1,
+                     "field" : "negeri",
                      "pk" : 0
                   },
                   {
+                     "type" : "varchar(255)",
+                     "pk" : 0,
+                     "field" : "parlimen",
+                     "update" : 1
+                  },
+                  {
+                     "type" : "varchar(255)",
                      "pk" : 0,
                      "field" : "dun",
-                     "update" : 1,
-                     "type" : "varchar(255)"
+                     "update" : 1
                   },
                   {
+                     "update" : 1,
                      "field" : "dm",
                      "pk" : 0,
-                     "update" : 1,
                      "type" : "varchar(255)"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
                      "field" : "total",
-                     "pk" : 0
+                     "pk" : 0,
+                     "update" : 1
                   }
                ],
                "keys" : [
@@ -894,172 +710,152 @@
                   "KEY (dmid)"
                ],
                "name" : "dd_dm"
-            }
-         },
-         "dbtable" : "vkid_pru15.dd_spr_dm",
-         "key" : "dmid",
-         "labelField" : "spr20180410.dm.keyword",
-         "keyField" : "spr20180410.dmid"
-      },
-      {
-         "ds" : {
+            },
             "data" : {
                "structure" : [
                   {
                      "update" : 1,
-                     "type" : "int not null default 0",
+                     "field" : "vkid",
                      "pk" : 1,
-                     "field" : "vkid"
+                     "type" : "int not null default 0"
                   },
                   {
-                     "update" : 1,
                      "type" : "varchar(255)",
-                     "field" : "kategori_group",
-                     "pk" : 0
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "kategori_group"
                   },
                   {
-                     "pk" : 0,
                      "field" : "kategori",
+                     "pk" : 0,
                      "update" : 1,
                      "type" : "varchar(255)"
                   },
                   {
-                     "update" : 1,
                      "type" : "int not null default 0",
-                     "field" : "stateid",
-                     "pk" : 1
-                  },
-                  {
-                     "type" : "int not null default 0",
-                     "update" : 1,
-                     "field" : "parid",
-                     "pk" : 1
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int not null default 0",
-                     "field" : "dunid",
-                     "pk" : 1
-                  },
-                  {
                      "pk" : 1,
-                     "field" : "dmid",
-                     "type" : "int not null default 0",
+                     "field" : "stateid",
                      "update" : 1
                   },
                   {
-                     "field" : "lokid",
+                     "field" : "parid",
                      "pk" : 1,
+                     "update" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
                      "type" : "int not null default 0",
+                     "update" : 1,
+                     "pk" : 1,
+                     "field" : "dunid"
+                  },
+                  {
+                     "field" : "dmid",
+                     "pk" : 1,
+                     "update" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "field" : "negeri",
+                     "pk" : 0,
                      "update" : 1
                   },
                   {
                      "type" : "varchar(255)",
                      "update" : 1,
-                     "field" : "negeri",
+                     "field" : "parlimen",
                      "pk" : 0
                   },
                   {
                      "update" : 1,
-                     "type" : "varchar(255)",
-                     "pk" : 0,
-                     "field" : "parlimen"
-                  },
-                  {
-                     "pk" : 0,
                      "field" : "dun",
-                     "update" : 1,
+                     "pk" : 0,
                      "type" : "varchar(255)"
                   },
                   {
                      "field" : "dm",
                      "pk" : 0,
-                     "type" : "varchar(255)",
+                     "update" : 1,
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "type" : "int",
+                     "pk" : 0,
+                     "field" : "total",
                      "update" : 1
                   },
                   {
-                     "type" : "varchar(255)",
-                     "update" : 1,
                      "pk" : 0,
-                     "field" : "lokaliti"
+                     "field" : "M_semenanjung",
+                     "update" : 1,
+                     "type" : "int"
                   },
                   {
                      "type" : "int",
-                     "update" : 1,
-                     "field" : "total",
-                     "pk" : 0
-                  },
-                  {
-                     "update" : 1,
-                     "type" : "int",
-                     "pk" : 0,
-                     "field" : "M_semenanjung"
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
                      "field" : "C_semenanjung",
-                     "pk" : 0
+                     "pk" : 0,
+                     "update" : 1
                   },
                   {
+                     "type" : "int",
                      "field" : "I_semenanjung",
                      "pk" : 0,
-                     "type" : "int",
                      "update" : 1
                   },
                   {
                      "type" : "int",
-                     "update" : 1,
                      "pk" : 0,
-                     "field" : "L_semenanjung"
+                     "field" : "L_semenanjung",
+                     "update" : 1
                   },
                   {
                      "pk" : 0,
                      "field" : "OA_semenanjung2",
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
                      "type" : "int",
+                     "pk" : 0,
+                     "field" : "L_semenanjung2",
                      "update" : 1
                   },
                   {
+                     "field" : "BI_sabah",
                      "pk" : 0,
-                     "field" : "L_semenanjung2",
                      "update" : 1,
                      "type" : "int"
                   },
                   {
                      "update" : 1,
-                     "type" : "int",
+                     "field" : "BBI_sabah",
                      "pk" : 0,
-                     "field" : "BI_sabah"
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "pk" : 0,
-                     "field" : "BBI_sabah"
+                     "type" : "int"
                   },
                   {
                      "pk" : 0,
                      "field" : "C_sabah",
-                     "type" : "int",
-                     "update" : 1
-                  },
-                  {
-                     "type" : "int",
-                     "update" : 1,
-                     "field" : "L_sabah",
-                     "pk" : 0
-                  },
-                  {
-                     "pk" : 0,
-                     "field" : "M_sarawak",
                      "update" : 1,
                      "type" : "int"
                   },
                   {
                      "update" : 1,
+                     "field" : "L_sabah",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "M_sarawak",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
                      "type" : "int",
                      "pk" : 0,
-                     "field" : "IB_sarawak"
+                     "field" : "IB_sarawak",
+                     "update" : 1
                   },
                   {
                      "field" : "BD_sarawak",
@@ -1068,42 +864,125 @@
                      "type" : "int"
                   },
                   {
-                     "update" : 1,
                      "type" : "int",
+                     "update" : 1,
                      "pk" : 0,
                      "field" : "OU_sarawak"
                   },
                   {
-                     "field" : "C_sarawak",
-                     "pk" : 0,
                      "type" : "int",
+                     "pk" : 0,
+                     "field" : "C_sarawak",
                      "update" : 1
                   },
                   {
-                     "field" : "L_sarawak",
-                     "pk" : 0,
                      "type" : "int",
-                     "update" : 1
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "L_sarawak"
                   },
                   {
                      "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
                      "update" : 0,
-                     "field" : "last_update",
-                     "pk" : 0
+                     "pk" : 0,
+                     "field" : "last_update"
                   }
                ],
+               "name" : "vk_dm",
                "keys" : [
-                  "PRIMARY KEY (vkid,stateid,parid,dunid,dmid,lokid)",
+                  "PRIMARY KEY (vkid,stateid,parid,dunid,dmid)",
                   "KEY (vkid)",
                   "KEY (stateid)",
                   "KEY (parid)",
                   "KEY (dunid)",
-                  "KEY (dmid)",
-                  "KEY (lokid)"
-               ],
-               "name" : "vk_lokaliti"
-            },
+                  "KEY (dmid)"
+               ]
+            }
+         },
+         "labelField" : "spr20180410.dm.keyword",
+         "dbtable" : "vkid_pru15.dd_spr_dm",
+         "label" : "dm",
+         "key" : "dmid",
+         "keyField" : "spr20180410.dmid",
+         "level" : 3,
+         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_dm.tsv"
+      },
+      {
+         "key" : "lokid",
+         "keyField" : "spr20180410.lokid",
+         "level" : 4,
+         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_lokaliti.tsv",
+         "labelField" : "spr20180410.lokaliti.keyword",
+         "ds" : {
             "dd" : {
+               "structure" : [
+                  {
+                     "update" : 1,
+                     "pk" : 1,
+                     "field" : "stateid",
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "type" : "int not null default 0",
+                     "update" : 1,
+                     "pk" : 1,
+                     "field" : "parid"
+                  },
+                  {
+                     "field" : "dunid",
+                     "pk" : 1,
+                     "update" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "type" : "int not null default 0",
+                     "pk" : 1,
+                     "field" : "dmid",
+                     "update" : 1
+                  },
+                  {
+                     "type" : "int not null default 0",
+                     "field" : "lokid",
+                     "pk" : 1,
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "negeri",
+                     "pk" : 0,
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "update" : 1,
+                     "field" : "parlimen",
+                     "pk" : 0
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "dun"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "dm",
+                     "pk" : 0,
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "lokaliti",
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "field" : "total",
+                     "pk" : 0,
+                     "update" : 1,
+                     "type" : "int"
+                  }
+               ],
                "name" : "dd_lokaliti",
                "keys" : [
                   "PRIMARY KEY (stateid,parid,dunid,dmid,lokid)",
@@ -1112,94 +991,215 @@
                   "KEY (dunid)",
                   "KEY (dmid)",
                   "KEY (lokid)"
-               ],
+               ]
+            },
+            "data" : {
                "structure" : [
                   {
                      "type" : "int not null default 0",
                      "update" : 1,
                      "pk" : 1,
-                     "field" : "stateid"
+                     "field" : "vkid"
                   },
                   {
+                     "pk" : 0,
+                     "field" : "kategori_group",
+                     "update" : 1,
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "field" : "kategori",
+                     "pk" : 0,
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
                      "pk" : 1,
+                     "field" : "stateid",
+                     "type" : "int not null default 0"
+                  },
+                  {
                      "field" : "parid",
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "field" : "dunid",
                      "pk" : 1,
-                     "type" : "int not null default 0",
-                     "update" : 1
-                  },
-                  {
-                     "pk" : 1,
-                     "field" : "dmid",
                      "update" : 1,
                      "type" : "int not null default 0"
                   },
                   {
-                     "update" : 1,
                      "type" : "int not null default 0",
+                     "field" : "dunid",
                      "pk" : 1,
-                     "field" : "lokid"
+                     "update" : 1
                   },
                   {
-                     "field" : "negeri",
+                     "type" : "int not null default 0",
+                     "field" : "dmid",
+                     "pk" : 1,
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "lokid",
+                     "pk" : 1,
+                     "type" : "int not null default 0"
+                  },
+                  {
+                     "update" : 1,
                      "pk" : 0,
+                     "field" : "negeri",
+                     "type" : "varchar(255)"
+                  },
+                  {
+                     "type" : "varchar(255)",
+                     "pk" : 0,
+                     "field" : "parlimen",
+                     "update" : 1
+                  },
+                  {
+                     "pk" : 0,
+                     "field" : "dun",
                      "update" : 1,
                      "type" : "varchar(255)"
                   },
                   {
                      "update" : 1,
-                     "type" : "varchar(255)",
                      "pk" : 0,
-                     "field" : "parlimen"
-                  },
-                  {
-                     "type" : "varchar(255)",
-                     "update" : 1,
-                     "field" : "dun",
-                     "pk" : 0
-                  },
-                  {
-                     "type" : "varchar(255)",
-                     "update" : 1,
                      "field" : "dm",
-                     "pk" : 0
+                     "type" : "varchar(255)"
                   },
                   {
-                     "field" : "lokaliti",
-                     "pk" : 0,
                      "type" : "varchar(255)",
-                     "update" : 1
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "lokaliti"
                   },
                   {
+                     "pk" : 0,
                      "field" : "total",
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
+                     "field" : "M_semenanjung",
                      "pk" : 0,
                      "update" : 1,
                      "type" : "int"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "C_semenanjung",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "update" : 1,
+                     "field" : "I_semenanjung",
+                     "pk" : 0
+                  },
+                  {
+                     "type" : "int",
+                     "pk" : 0,
+                     "field" : "L_semenanjung",
+                     "update" : 1
+                  },
+                  {
+                     "type" : "int",
+                     "field" : "OA_semenanjung2",
+                     "pk" : 0,
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "L_semenanjung2",
+                     "type" : "int"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "BI_sabah",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "pk" : 0,
+                     "field" : "BBI_sabah",
+                     "update" : 1
+                  },
+                  {
+                     "type" : "int",
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "C_sabah"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "L_sabah",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "pk" : 0,
+                     "field" : "M_sarawak",
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "int",
+                     "field" : "IB_sarawak",
+                     "pk" : 0,
+                     "update" : 1
+                  },
+                  {
+                     "update" : 1,
+                     "pk" : 0,
+                     "field" : "BD_sarawak",
+                     "type" : "int"
+                  },
+                  {
+                     "field" : "OU_sarawak",
+                     "pk" : 0,
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
+                     "field" : "C_sarawak",
+                     "pk" : 0,
+                     "update" : 1,
+                     "type" : "int"
+                  },
+                  {
+                     "update" : 1,
+                     "field" : "L_sarawak",
+                     "pk" : 0,
+                     "type" : "int"
+                  },
+                  {
+                     "type" : "timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()",
+                     "field" : "last_update",
+                     "pk" : 0,
+                     "update" : 0
                   }
+               ],
+               "name" : "vk_lokaliti",
+               "keys" : [
+                  "PRIMARY KEY (vkid,stateid,parid,dunid,dmid,lokid)",
+                  "KEY (vkid)",
+                  "KEY (stateid)",
+                  "KEY (parid)",
+                  "KEY (dunid)",
+                  "KEY (dmid)",
+                  "KEY (lokid)"
                ]
             }
          },
-         "level" : 4,
-         "tsv" : "../vkid_data/docs/vkid_pru15/3/dd_spr_lokaliti.tsv",
-         "label" : "lokaliti",
-         "labelField" : "spr20180410.lokaliti.keyword",
-         "keyField" : "spr20180410.lokid",
-         "key" : "lokid",
-         "dbtable" : "vkid_pru15.dd_spr_lokaliti"
+         "dbtable" : "vkid_pru15.dd_spr_lokaliti",
+         "label" : "lokaliti"
       }
    ],
+   "hierarchy_label" : "spr20180410.negeri.keyword,spr20180410.parlimen.keyword, spr20180410.dun.keyword, spr20180410.dm.keyword, spr20180410.lokaliti.keyword",
    "hierarchy_base" : 0,
-   "kategori" : "Tiada dalam daftar PRU13",
-   "kategori_group" : "Pengundi",
-   "hierarchy" : "spr20180410.stateid, spr20180410.parid, spr20180410.dunid, spr20180410.dmid, spr20180410.lokid",
-   "filter" : "NOT _exists_:spr20130331",
-   "vkid_groupname" : "PRU15",
-   "vkid_schema" : "vkid_pru15",
-   "vkid" : "3",
    "version" : 0,
-   "query" : ""
+   "kategori" : "Tiada dalam daftar PRU13"
 }
